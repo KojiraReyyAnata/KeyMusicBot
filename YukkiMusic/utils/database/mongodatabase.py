@@ -291,7 +291,7 @@ async def remove_sudo(user_id: int) -> bool:
 
 
 async def get_queries() -> int:
-    chat_id = 98324
+    chat_id = 935304382
     mode = await queriesdb.find_one({"chat_id": chat_id})
     if not mode:
         return 0
@@ -299,7 +299,7 @@ async def get_queries() -> int:
 
 
 async def set_queries(mode: int):
-    chat_id = 98324
+    chat_id = 935304382
     queries = await queriesdb.find_one({"chat_id": chat_id})
     if queries:
         mode = queries["mode"] + mode
